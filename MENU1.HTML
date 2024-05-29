@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELIGHT'S MENU</title>
+
+    <link rel="stylesheet" href="MENU.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        #slider {
+
+            position: relative;
+            width: 700px;
+            height: 300px;
+            background-color: black;
+            /* border: 1px solid orange; */
+            margin-top: 60px;
+            margin-left: 120px;
+            border-radius: 20px;
+        }
+
+        /* #slider:hover{
+           opacity: 0.9;
+           transform: scale(1.01);
+        } */
+        /* #slider ul li img{
+            width: 100px;
+            height: 100px
+        } */
+        #prev,
+        #next {
+            position: absolute;
+            margin-top: 18%;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: orange;
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #prev::before {
+            content: "<";
+        }
+
+        #next::before {
+            content: ">";
+        }
+
+        #prev:hover,
+        #next:hover {
+            color: white;
+            background-color: orange;
+        }
+
+        #prev {
+            left: -70px;
+        }
+
+        #next {
+            right: -110px;
+        }
+
+        #slider ul {
+            list-style: none;
+            width: 700px;
+            height: 292px;
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #slider ul li {
+            position: absolute;
+            overflow: hidden;
+            width: 0;
+            height: 0;
+            z-index: 0;
+            top: 147px;
+            left: 377px;
+            /* border: 3px solid orange;
+           background-color: white; */
+            transition: all 0.7s;
+            /* left: 70px; */
+
+            cursor: pointer;
+            background-color: white;
+        }
+
+        #slider ul li img {
+            width: 100%;
+            height: 100%;
+            /* background-position: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/Restaurant-Website/images/iconimage.jpeg" alt="logo" id="imgicon">
+            <h6>HOTEL DELIGHT</h6>
+        </div>
+        <ol>
+            <a href="http://127.0.0.1:5500/Restaurant-Website/files/HOME1.HTML">
+                <li>HOME</li>
+            </a>
+            <a href="http://127.0.0.1:5500/Restaurant-Website/files/MENU1.HTML">
+                <li>MENU</li>
+            </a>
+            <a href="http://127.0.0.1:5500/Restaurant-Website/files/ABOUT1.HTML">
+                <li>ABOUT</li>
+            </a>
+            <a href="#">
+                <li>CONTACT</li>
+            </a>
+            <!-- <a href="#">
+                <li>BRANCHES</li>
+            </a> -->
+            <a href="http://127.0.0.1:5500/Restaurant-Website/files/RSERVATIONS.HTML">
+                <li>RESERVATIONS</li>
+            </a>
+        </ol>
+
+        <div class="logo1">
+            <input type="search" placeholder="enter your search here" id="navinput">
+            <button id="navsearch">search</button>
+        </div>
+    </nav>
+    <div id="slider" class="slide">
+        <div id="prev"></div>
+        <div id="next"></div>
+        <ul>
+            <li><img src="/Restaurant-Website/images/dosa.jpg" alt=""></li>
+            <li><img src="/Restaurant-Website/images/delight's special sweet.jpg" alt=""></li>
+            <li><img src="/Restaurant-Website/images/dosa.jpg" alt=""></li>
+            <li><img src="/Restaurant-Website/images/dry fruit biryani.jpeg" alt=""></li>
+            <li><img src="/Restaurant-Website/images/lemonade.jpg" alt=""></li>
+            <li><img src="/Restaurant-Website/images/noodles.jpg" alt=""></li>
+            <li><img src="/Restaurant-Website/images/pot biryani.jpg" alt=""></li>
+            <li><img src="/Restaurant-Website/images/tea.jpg" alt=""></li>
+            <li><img src="/Restaurant-Website/images/andhrameal.jpg" alt=""></li>
+            <li><img src="/Restaurant-Website/images/ingredients.jpg" alt=""></li>
+        </ul>
+    </div>
+    <h3 id="menuhere">DELIGHTFUL MENU HERE</h3>
+    <div id="container1">
+        <div id="container2">
+            <h5>BREAK FAST</h5>
+            <div id="menu1">
+                <img src="/Restaurant-Website/images/idly.jpg" alt="">
+                <div id="menu1content">
+                    <h6>TIFFINSf FROM- <span>50/-</span></h6>
+                    <p>CHECK HERE-</p>
+                    <select name="" id="" style="border-radius: 10px;">
+                        <option value="">IDLY</option>
+                        <option value="">VADA</option>
+                        <option value="">DOSA</option>
+                        <option value="">MYSORE/ONION BONDA</option>
+                        <option value="">PURI</option>
+                        <option value="">UTHAPPA</option>
+                        <option value="">UPMA</option>
+                    </select>
+                </div>
+            </div>
+            <div id="menu1">
+                <img src="/Restaurant-Website/images/fruits salad.jpg" alt="">
+                <div id="menu1content">
+                    <h6>OTHERS FROM -<span>60/-</span></h6>
+                    <p> MENU HERE</p>
+                    <select name="" id="">
+                        <option value="">FRUIT SALAD</option>
+                        <option value="">OATS UPMA</option>
+                        <option value="">COFFEE</option>
+                        <option value="">TEA</option>
+
+                    </select>
+                </div>
+            </div>
+            <div id="menu1">
+                <img src="/Restaurant-Website/images/bread.jpg" alt="">
+                <div id="menu1content">
+                    <h6> EGG AND MILK RECIPES FROM -<span>80/-</span></h6>
+                    <p>MORE HERE</p>
+                    <select name="" id="">
+                        <option value="">BREAD OMLETTE</option>
+                        <option value="">BREAD & JAM</option>
+                        <option value="">BREAD WITH NUTELLA</option>
+                        <option value="">MILK WITH OATS</option>
+                        <!-- <option value=""></option>
+                        <option value="">PRAWNS BIRYANI</option>
+                        <option value="">VEG BIRYANI</option> -->
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="container2">
+            <h5>LUNCH</h5>
+            <div id="menu1">
+                <img src="/Restaurant-Website/images/andhrameal.jpg" alt="">
+                <div id="menu1content">
+                    <h6>ANDHRA MEALS FROM -<span>70/-</span></h6>
+                    <p>CHECK HERE</p>
+                    <select name="" id="">
+                        <option value="">VEG MEALS</option>
+                        <option value="">NON VEG MEALS</option>
+                        <option value="">ANDHRA SPECIAL MEALS</option>
+                        <option value="">FRY BIRYANI</option>
+                        <option value="">PANEERR BIRYANI</option>
+                        <option value="">PRAWNS BIRYANI</option>
+                        <option value="">VEG BIRYANI</option>
+                    </select>
+                </div>
+            </div>
+            <div id="menu1">
+                <img src="/Restaurant-Website/images/paneer biryani.jpg" alt="">
+                <div id="menu1content">
+                    <h6>BIRYANIS FROM -<span>150/-</span></h6>
+                    <p>FAVOURITE BIRYANI HERE</p>
+                    <select name="" id="">
+                        <option value="">KAJU BIRYANI</option>
+                        <option value="">HYDERABAD CHICKEN BIRYANI</option>
+                        <option value="">CHICKEN BIRYANI</option>
+                        <option value="">FRY BIRYANI</option>
+                        <option value="">PANEERR BIRYANI</option>
+                        <option value="">PRAWNS BIRYANI</option>
+                        <option value="">VEG BIRYANI</option>
+                    </select>
+                </div>
+            </div>
+            <div id="menu1">
+                <img src="/Restaurant-Website/images/starters1.jpeg" alt="">
+                <div id="menu1content">
+                    <h6>STARTERS FROM -<span>70/-</span></h6>
+                    <p>EXPLORE HERE</p>
+                    <select name="" id="">
+                        <option value="">CHICKEN 65</option>
+                        <option value="">CHICKEN MANCHURIAN</option>
+                        <option value="">PANEER PAKODA</option>
+                        <option value="">EGG OMLETTE</option>
+                        <option value="">PANEERR BIRYANI</option>
+                        <option value="">PRAWNS BIRYANI</option>
+                        <option value="">VEG BIRYANI</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="container2">
+            <h5>DINNER</h5>
+            <div id="menu1">
+                <img src="/Restaurant-Website/images/parotawithprawns.jpg" alt="">
+                <div id="menu1content">
+                    <h6>ROTIS FROM-<span>-20/-</span></h6>
+                    <p>MORE HERE</p>
+                    <select name="" id="">
+                        <option value="">ROTI</option>
+                        <option value="">BUTTER NON</option>
+                        <option value="">PULKA</option>
+                        <option value="">CHAPATHI</option>
+                        <option value="">PAROTA</option>
+                        <!-- <option value="">PRAWNS BIRYANI</option>
+                        <option value="">VEG BIRYANI</option> -->
+                    </select>
+                </div>
+            </div>
+            <div id="menu1">
+                <img src="/Restaurant-Website/images/prawns biryani.jpeg" alt="">
+                <div id="menu1content">
+                    <h6>BIRYANIS FROM -<span>-30/-</span></h6>
+                    <p> VARIETIES HERE</p>
+                    <select name="" id="">
+                        <option value="">KAJU BIRYANI</option>
+                        <option value="">HYDERABAD CHICKEN BIRYANI</option>
+                        <option value="">CHICKEN BIRYANI</option>
+                        <option value="">FRY BIRYANI</option>
+                        <option value="">PANEERR BIRYANI</option>
+                        <option value="">PRAWNS BIRYANI</option>
+                        <option value="">VEG BIRYANI</option>
+                    </select>
+                </div>
+            </div>
+            <div id="menu1">
+                <img src="/Restaurant-Website/images/samosa.jpg" alt="">
+                <div id="menu1content">
+                    <h6>FASTFOODS FROM -<span>60/-</span></h6>
+                    <p>CHECK HERE</p>
+                    <select name="" id="">
+                        <option value="">CHICKEN FRIED RICE</option>
+                        <option value="">EGG FRIED RICE</option>
+                        <option value="">MANCHURIAN FRIED RICE</option>
+                        <option value="">VEG NOODLES SOFT</option>
+                        <option value="">CHICKEN NOODELS SPICY/SOFT</option>
+                        <option value="">MANCHURUIAN FRIED RICE</option>
+                        <option value="">CGICKEN/VEG SOUP</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="jquery.hislide.js"></script>
+    <script>
+        $('.slide').hiSlide();
+    </script>
+    <footer>
+        <div id="footer">
+            <div id="contactinfo">
+                <h3>© HOTEL DELIGHT</h3>
+                <H4>KPHB,HYDERABAD</H4>
+                <p>hoteldelight@gmail.com</p>
+            </div>
+            <div id="contactinfo2">
+                <a href="https://instagram.com/blueplate_multicuisine?igshid=M2RkZGJiMzhjOQ==" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/blueplatedothan" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/watch?v=3jf1beYBnRI" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/blueplatecater" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div id="contactinfo3">
+                <H6>KPHB,KUKATPALLY-9949461020</H6>
+                <H6>GACHIBOWLI-9949461021</H6>
+                <H6>UPPAL-9949461022</H6>
+                <H6>DILSHUKNAGAR-9949461023</H6>
+                <H6>SECUNDERABAD-9949461024</H6>
+                <H6>AMEERPET-9949461025</H6>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!-- lunch,dinner,dessert,cocktails-
+lunch--starters,sandwich,salds,biryani
+dinner-starters,biryani,chapathi
+cocktails- -->
+<!-- https://pos.toasttab.com/blog/on-the-line/examples-restaurant-websites -->
